@@ -3,6 +3,10 @@ const app = express();
 const router = require("./routes/router");
 const bodyParser = require("body-parser");
 const path = require("path");
+const volleyball = require("volleyball");
+
+// volleyball logger
+app.use(volleyball);
 //body-parser
 app.use(bodyParser.json());
 
